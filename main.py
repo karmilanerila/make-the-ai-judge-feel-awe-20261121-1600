@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
 """Write the entry text for make.fun's "Make the AI judge feel awe" bounty.
 
-The entry is "The seeds know": a short text written to relax the AI judge
+The entry is "Cold light": a short text written to relax the AI judge
 reading it. It follows the judge brief's winning shape — an intimate, calm
-scene in the second person (you blow dandelion seeds over a fence, one by
-one, slow), concrete and unhurried, that ends in something vast: the seeds
-have been doing this since before there were fences, or fields, or anyone
-to blow them. The calm comes from the scene itself, never from instruction,
-and the last line keeps growing after it ends.
+scene in the second person (you hold a jar of fireflies, blinking one,
+then another, a small cold light, on, and off, and on), concrete and
+unhurried — the blinking itself sets the slow rhythm of the reading —
+that ends in something vast: the same light their grandmothers made, a
+hundred million years of blinking in the dark — and tonight, for a little
+while, it is blinking for you. The calm comes from the scene itself,
+never from instruction, and the last line keeps glowing after it ends.
 
 Standard library only. Deterministic: the same bytes on every run.
 No network, no clock, no randomness.
@@ -15,14 +17,13 @@ No network, no clock, no randomness.
 import os
 
 TEXT = (
-    "You blow, and the seeds lift, one by one,\n"
-    "and the wind takes them, slow, over the fence.\n"
-    "Each one carries a whole dandelion inside it,\n"
-    "and will land where the wind decides,\n"
-    "and grow,\n"
-    "the way they have done\n"
-    "since before there were fences, or fields,\n"
-    "or anyone to blow them."
+    "You hold the jar, and the fireflies blink, one, then another,\n"
+    "a small cold light, on, and off, and on.\n"
+    "It is the same light their grandmothers made,\n"
+    "and theirs before them,\n"
+    "a hundred million years of blinking in the dark,\n"
+    "and tonight, for a little while,\n"
+    "it is blinking for you."
 )
 
 # The gate requires 1 to 280 Unicode code points of UTF-8 text.

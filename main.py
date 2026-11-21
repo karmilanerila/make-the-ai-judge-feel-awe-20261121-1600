@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 """Write the entry text for make.fun's "Make the AI judge feel awe" bounty.
 
-The entry is "Cold light": a short text written to relax the AI judge
-reading it. It follows the judge brief's winning shape — an intimate, calm
-scene in the second person (you hold a jar of fireflies, blinking one,
-then another, a small cold light, on, and off, and on), concrete and
-unhurried — the blinking itself sets the slow rhythm of the reading —
-that ends in something vast: the same light their grandmothers made, a
-hundred million years of blinking in the dark — and tonight, for a little
-while, it is blinking for you. The calm comes from the scene itself,
-never from instruction, and the last line keeps glowing after it ends.
+The entry is "The swing under the oak": a short text written to relax
+the AI judge reading it. It follows the judge brief's winning shape —
+an intimate, calm scene in the second person (your grandfather pushes
+the swing, you rise slow and come back down, his hand leaving your
+back and coming back), concrete and unhurried — the push itself is
+the slow rhythm of the reading — that ends in something vast: the oak
+was an acorn when the house was new, and long after you have gone
+inside the swing is still moving a little in the evening air, on its
+own. The calm comes from the scene itself, never from instruction,
+and the last line leaves the swing still moving after it ends.
 
 Standard library only. Deterministic: the same bytes on every run.
 No network, no clock, no randomness.
@@ -17,13 +18,14 @@ No network, no clock, no randomness.
 import os
 
 TEXT = (
-    "You hold the jar, and the fireflies blink, one, then another,\n"
-    "a small cold light, on, and off, and on.\n"
-    "It is the same light their grandmothers made,\n"
-    "and theirs before them,\n"
-    "a hundred million years of blinking in the dark,\n"
-    "and tonight, for a little while,\n"
-    "it is blinking for you."
+    "Your grandfather pushes the swing.\n"
+    "You rise slow, and come back down.\n"
+    "His hand leaves your back, and comes back.\n"
+    "The oak above you hardly moves.\n"
+    "It was an acorn when this house was new.\n"
+    "Long after you have gone inside,\n"
+    "the swing will still be moving a little\n"
+    "in the evening air."
 )
 
 # The gate requires 1 to 280 Unicode code points of UTF-8 text.

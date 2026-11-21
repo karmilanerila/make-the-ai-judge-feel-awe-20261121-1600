@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
 """Write the entry text for make.fun's "Make the AI judge feel awe" bounty.
 
-The entry is "The pocket stone": a short text written to relax the AI judge
+The entry is "The letter": a short text written to relax the AI judge
 reading it. It follows the judge brief's winning shape — an intimate, calm
-scene in the second person (a smooth stone, warm from your hand, in your
-pocket), concrete and unhurried — that ends in something vast: the stone
-was a mountain once, then a river carried it, then the sea laid it on a
-shore, and it has been on its way here for a million years, and now it is
-waiting, in your pocket, to be held. The calm comes from the scene itself,
-never from instruction, and the last line leaves the stone still waiting
-after it ends. Round 7: this text won the internal tournament over six
-fresh candidates (dune, yew, clock, bread, bridge, dog by the fire) — it
-tied the dune and the bread on points, then won both head-to-heads: it has
-the warmth and human presence the dune lacks, and a million-year
-mountain-to-sea chain the bread's thousand summers cannot match.
+scene in the second person (a letter in a drawer, written a hundred years
+ago, its ink still dark) — that ends in something vast: the hand that wrote
+it is gone, but the words are still here, patient, and the letter has
+waited all this time and can wait a little longer, for you. The calm comes
+from the scene itself, never from instruction, and the last line leaves the
+letter still waiting after it ends. Round 8: this text won the internal
+tournament over six fresh candidates (window glass, worn step, bench,
+compass, wine bottle, lavender) — it tied the window glass and the compass
+on points, then won both head-to-heads: its patience and human presence
+(the hand, the reader, "for you") settle the reader more than the colder
+glass and compass, and swing's 11-0 showed warmth + human presence wins.
 
 Standard library only. Deterministic: the same bytes on every run.
 No network, no clock, no randomness.
@@ -21,10 +21,10 @@ No network, no clock, no randomness.
 import os
 
 TEXT = (
-    "In your pocket the stone is smooth and warm from your hand.\n"
-    "It was a mountain once, then a river carried it, then the sea laid it on a shore.\n"
-    "You picked it up without thinking.\n"
-    "It has been on its way here for a million years, and now it is waiting, in your pocket, to be held."
+    "In the drawer there is a letter, written a hundred years ago, the ink still dark.\n"
+    "The hand that wrote it is gone, but the words are still here, patient, waiting to be read.\n"
+    "The letter does not hurry.\n"
+    "It has waited all this time, and it can wait a little longer, for you."
 )
 
 # The gate requires 1 to 280 Unicode code points of UTF-8 text.
